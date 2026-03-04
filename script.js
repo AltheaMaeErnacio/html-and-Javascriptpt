@@ -1,3 +1,5 @@
+#Random Quote Generator – Lavender pastel themed app with categories, favorites, and background music
+
 function randomColor() {
   return "#" + Math.floor(Math.random() * 16777215)
     .toString(16)
@@ -25,5 +27,6 @@ function generatePalette() {
     palette.appendChild(box);
   }
 }
+
 
 generatePalette();
