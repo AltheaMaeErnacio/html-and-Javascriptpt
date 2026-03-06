@@ -1,4 +1,4 @@
-# Random Quote Generator – Lavender pastel themed app with categories, favorites, and background music
+// Random Quote Generator – Lavender pastel themed app with categories, favorites, and background music
 
 const quotes = {
 motivation: [
@@ -86,3 +86,4 @@ music.pause();
 }
 
 displayFavorites()
+
