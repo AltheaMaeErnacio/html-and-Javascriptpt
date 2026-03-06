@@ -1,25 +1,39 @@
-#Lavender Pastel Quote App – A soft aesthetic random quote generator with music and favorites
+# Lavender Pastel Quote App – A soft aesthetic random quote generator with music and favorites
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Color Palette Generator</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Lavender Pastel Quote App</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>🎨 Color Palette Generator</h1>
-<p>Click a color to copy its code</p>
+<div class="card">
+<h2>🌸 Soft Lavender Reminder 🌸</h2>
 
-<button onclick="generatePalette()">Generate Palette</button>
+<select id="category">
+<option value="motivation">🌱 Motivation</option>
+<option value="school">📚 School</option>
+<option value="selflove">💖 Self-love</option>
+<option value="friendship">🌷 Friendship</option>
+<option value="dreams">✨ Dreams</option>
+<option value="faith">🙏 Faith</option>
+</select>
 
-<div class="palette" id="palette"></div>
+<p id="quote">Choose a category and click New Quote 💜</p>
+
+<button onclick="generateQuote()">New Quote</button>
+<button onclick="saveFavorite()">Save 💾</button>
+<button onclick="clearFavorites()">Clear All 🗑</button>
+<button onclick="toggleMusic()">🎵 Toggle Music</button>
+
+<div id="favoritesList"></div>
+</div>
+
+<audio id="bgMusic" loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=calm-ambient-110397.mp3" type="audio/mpeg">
+</audio>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
